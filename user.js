@@ -11,14 +11,14 @@ user_pref("browser.shell.skipDefaultBrowserCheckOnFirstRun", true);
 // -------------------------------------
 // Set startup page
 // 0=blank, 1=home, 2=last visited page, 3=resume previous session
-user_pref("browser.startup.page", 0);
+user_pref("browser.startup.page", 1);
 // -------------------------------------
-// Set HOME+NEWWINDOW page
-user_pref("browser.startup.homepage", "about:blank");
+// Set HOME+NEWWINDOW page (Tabliss)
+user_pref("browser.startup.homepage", "	moz-extension://608ba126-af96-4c41-a91a-e5f849966e1b/index.html");
 // -------------------------------------
 // Set NEWTAB page
 // true=Activity Stream (default), false=blank page
-user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enabled", true);
 // -------------------------------------
 // Disable sponsored content on Firefox Home (Activity Stream)
 user_pref("browser.newtabpage.activity-stream.showSponsored", false); // [FF58+]
@@ -846,12 +846,12 @@ user_pref("javascript.options.wasm", false);
 // Disable rendering of SVG OpenType fonts
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 // -------------------------------------
-// Disable widevine CDM (Content Decryption Module)
-user_pref("media.gmp-widevinecdm.enabled", false);
+// Enable widevine CDM (Content Decryption Module)
+user_pref("media.gmp-widevinecdm.enabled", true);
 // -------------------------------------
-// Disable all DRM content (EME: Encryption Media Extension)
-user_pref("media.eme.enabled", false);
-user_pref("browser.eme.ui.enabled", false);
+// Enable all DRM content (EME: Encryption Media Extension)
+user_pref("media.eme.enabled", true);
+user_pref("browser.eme.ui.enabled", true);
 // -------------------------------------
 // Disable IPv6 if using a VPN
 // user_pref("network.dns.disableIPv6", true);
@@ -1239,5 +1239,5 @@ user_pref("browser.urlbar.suggest.searches", true);
 // Enable shortcuts (such as keyword searches or quick actions)
 user_pref("browser.urlbar.shortcuts.bookmarks", true); 
 
-// Enable CSS UI Customization
+// Enable CSS UI Customization 
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); 
