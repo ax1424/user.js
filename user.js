@@ -1230,7 +1230,7 @@ user_pref("app.update.enabled", true);
 // Enable browsing history in Firefox
 user_pref("places.history.enabled", true);
 
-// Enable disable bookmark suggestions
+// Enable bookmark suggestions
 user_pref("browser.urlbar.suggest.bookmark", true);
 
 // Enable search engine suggestions
