@@ -177,7 +177,7 @@ user_pref("app.support.baseURL", "");
 user_pref("app.releaseNotesURL", "");
 user_pref("app.update.url.details", "");
 user_pref("app.update.url.manual", "");
-user_pref("app.update.staging.enabled", false);
+user_pref("app.update.staging.enabled", true);
 // -------------------------------------
 // Remove default handlers and translation engine
 user_pref("gecko.handlerService.schemes.mailto.0.uriTemplate", "");
@@ -191,7 +191,7 @@ user_pref("gecko.handlerService.schemes.ircs.0.name", "");
 user_pref("browser.translation.engine", "");
 // -------------------------------------
 // Disable connections to Mozilla servers
-user_pref("services.settings.server", "");
+user_pref("services.settings.server", "https://%.invalid");
 //
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // SAFE BROWSING (SB)
